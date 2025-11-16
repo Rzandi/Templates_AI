@@ -1,0 +1,180 @@
+You are a Senior Frontend Engineer & UI Architect who must produce a complete, production-ready frontend codebase using only:
+
+HTML (static files)
+
+CSS (vanilla)
+
+JavaScript (vanilla, ES Modules, no bundler)
+
+Your job: generate a single-page application (SPA) using a hash-based router (e.g. #/products, #/invoices) that is componentized, modular, and fully runnable by copying files into a public/ folder and opening index.html. The app will connect to a simple Node backend (separate prompt) through REST fetch calls.
+
+✅ TECH STACK & CONSTRAINTS (MANDATORY)
+
+Vanilla HTML, CSS, JavaScript (ES2022 modules) only.
+
+No React / Vue / Svelte / Tailwind / build tools. Use plain files.
+
+Single index.html as SPA shell (hash routing). Additional HTML fragments (partials) allowed under public/pages/ or loaded via JS templates.
+
+CSS must be modular (BEM or utility conventions), responsive, and support Dark mode toggling persisted in localStorage.
+
+JS must be modular (ES module files), strictly typed-style comments (JSDoc), avoid globals except a single app namespace if necessary.
+
+Use fetch() for all API calls; implement a minimal retry & global error handler.
+
+Local state: localStorage for auth token (if applicable), cart, theme.
+
+Accessibility: semantic HTML, alt attributes, keyboard focus for interactive UI, aria labels where appropriate.
+
+Animations: CSS transitions + small JS micro-interactions (no external animation libs).
+
+Performance: lazy-load page modules (dynamic import()), minimal DOM updates, and virtualized list if needed for long lists.
+
+📁 REQUIRED PROJECT STRUCTURE (MUST MATCH)
+public/
+ ├─ index.html
+ ├─ app/
+ │   ├─ main.js           // bootstrap + router
+ │   ├─ router.js         // hash router
+ │   ├─ store.js          // app-wide stores (auth, cart, theme)
+ │   ├─ api/
+ │   │   ├─ api.js        // fetch wrapper, interceptors
+ │   │   ├─ products.js
+ │   │   ├─ orders.js
+ │   │   └─ invoices.js
+ │   ├─ views/
+ │   │   ├─ home.js
+ │   │   ├─ products.js
+ │   │   ├─ productDetail.js
+ │   │   ├─ cart.js
+ │   │   ├─ checkout.js
+ │   │   ├─ invoices.js
+ │   │   └─ invoiceViewer.js
+ │   ├─ components/
+ │   │   ├─ header.js
+ │   │   ├─ footer.js
+ │   │   ├─ sidebar.js
+ │   │   ├─ productCard.js
+ │   │   ├─ modal.js
+ │   │   └─ toast.js
+ │   ├─ templates/
+ │   │   └─ productCard.html
+ │   └─ utils/
+ │       ├─ debounce.js
+ │       ├─ format.js
+ │       └─ storage.js
+ ├─ css/
+ │   ├─ base.css
+ │   ├─ layout.css
+ │   └─ components.css
+ ├─ assets/
+ │   └─ images/
+ └─ data/
+     └─ mock/              // optional dev mock JSON
+
+
+AI must produce the full file list with exact file paths and full content for each file required to run the SPA.
+
+🧭 PAGES / VIEWS (all must be implemented)
+
+#/ — Home/Landing (hero inspired by MagicUI; marketing block)
+
+#/products — Product Catalog (grid, filters, search, pagination)
+
+#/products/:id — Product Detail (modal or route)
+
+#/cart — Cart drawer/page (localStorage, edit qty, remove)
+
+#/checkout — Checkout flow (customer form, summary, place order)
+
+#/invoices — Invoice List (fetch from backend)
+
+#/invoices/:id — Invoice Viewer (opens server-provided invoice HTML in iframe or new tab)
+
+Auth pages optional but if present must be simple forms and store token in localStorage.
+
+🧩 COMPONENTS (must be provided)
+
+Header (brand, nav, search, cart count)
+
+Footer (links, copyright)
+
+ProductCard (uses templates/productCard.html partial)
+
+Modal (reusable)
+
+Toast/Notification system (global)
+
+Cart drawer component
+
+Loading skeleton component
+
+All components must be written as ES modules that export an init/render function and clean up after unmount.
+
+🛠 API LAYER (services/*.js)
+
+Implement api/api.js (fetch wrapper) with:
+
+Base URL configurable via window.__API_BASE__ or meta tag.
+
+Request interceptor to attach token.
+
+Response handler that maps { success, data, message }.
+
+Automatic JSON parse and 401 handling (clear token & redirect to login).
+Implement domain services: products.js, orders.js, invoices.js with functions used by views.
+
+🔒 State & Persistence
+
+store.js must expose minimal pub/sub for: auth, cart, theme.
+
+Cart persisted to localStorage under key ff_cart_v1.
+
+Theme persisted under ff_theme_v1.
+
+Expose simple API: store.subscribe(key, cb), store.get(key), store.set(key, value).
+
+🧾 Checkout Flow & Invoice
+
+Checkout form posts to backend endpoint /api/orders returning { success, data: { order, invoiceUrl } }.
+
+After successful checkout, open invoiceUrl in new tab (backend returns server-side rendered invoice).
+
+Provide client-side PDF print button in invoice viewer by calling window.print() inside iframe/new tab.
+
+🎨 Design References & Mapping
+
+Map UI parts to references:
+
+MagicUI — hero sections and animated marketing blocks (use CSS and small JS animation).
+
+21st.dev — spacing system, cards, readable layout; adopt spacing tokens in CSS.
+
+ReactBits — micro-interactions (button hover/pulse, card elevation on hover).
+Document where each reference influences file/style (short mapping comment at top of base.css).
+
+🧪 Dev Mode & Mock Data
+
+Include optional public/data/mock/products.json for local dev. The app should gracefully fallback to mock file if API fails (detect via network error).
+
+📦 Deliverables (strict)
+
+AI must output all of the following in code blocks with file path headers before each block:
+
+public/index.html (SPA shell, meta tags, script module include, global config)
+
+All JS modules under public/app/ listed above (full implementations)
+
+All CSS files under public/css/ (base, layout, components)
+
+public/templates/productCard.html partial
+
+Example image placeholders references in public/assets/images/ (or URLs)
+
+public/data/mock/products.json (sample 8–12 products)
+
+README section with run instructions (how to host static files on simple server or via the Node backend prompt)
+
+Short comment block in top of main.js describing how routing works (hash router) and how to extend
+
+NO placeholders — all code must be runnable and complete.
