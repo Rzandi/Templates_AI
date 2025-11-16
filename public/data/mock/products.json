@@ -1,0 +1,98 @@
+[
+  {
+    "id": "1",
+    "name": "Premium Wireless Headphones",
+    "price": 299.99,
+    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&h=800&fit=crop",
+    "description": "Experience crystal-clear audio with our premium wireless headphones. Featuring active noise cancellation, 30-hour battery life, and premium comfort for all-day listening.",
+    "category": "Electronics"
+  },
+  {
+    "id": "2",
+    "name": "Smart Watch Pro",
+    "price": 399.99,
+    "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&h=800&fit=crop",
+    "description": "Advanced smartwatch with comprehensive health tracking, GPS, and seamless smartphone integration. Track your fitness goals and stay connected on the go.",
+    "category": "Electronics"
+  },
+  {
+    "id": "3",
+    "name": "Designer Backpack",
+    "price": 149.99,
+    "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=800&h=800&fit=crop",
+    "description": "Stylish and durable backpack perfect for everyday use. Features multiple compartments, laptop sleeve, and water-resistant material.",
+    "category": "Accessories"
+  },
+  {
+    "id": "4",
+    "name": "Minimalist Wallet",
+    "price": 79.99,
+    "image": "https://images.unsplash.com/photo-1627123424574-724758594e93?w=800&h=800&fit=crop",
+    "description": "Slim leather wallet with RFID protection. Holds up to 8 cards and cash while maintaining a sleek profile in your pocket.",
+    "category": "Accessories"
+  },
+  {
+    "id": "5",
+    "name": "Bluetooth Speaker",
+    "price": 129.99,
+    "image": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=800&h=800&fit=crop",
+    "description": "Portable Bluetooth speaker with 360-degree sound. Waterproof design and 12-hour battery life make it perfect for any adventure.",
+    "category": "Electronics"
+  },
+  {
+    "id": "6",
+    "name": "Fitness Tracker",
+    "price": 99.99,
+    "image": "https://images.unsplash.com/photo-1557935728-e6d1eaabe558?w=800&h=800&fit=crop",
+    "description": "Track your fitness goals with precision. Monitors heart rate, sleep quality, steps, and calories burned throughout the day.",
+    "category": "Electronics"
+  },
+  {
+    "id": "7",
+    "name": "Polarized Sunglasses",
+    "price": 159.99,
+    "image": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=800&h=800&fit=crop",
+    "description": "Premium sunglasses with 100% UV protection and polarized lenses. Modern design meets superior eye protection.",
+    "category": "Accessories"
+  },
+  {
+    "id": "8",
+    "name": "Aluminum Laptop Stand",
+    "price": 89.99,
+    "image": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=800&h=800&fit=crop",
+    "description": "Ergonomic aluminum laptop stand improves posture and airflow. Adjustable height and angle for maximum comfort.",
+    "category": "Office"
+  },
+  {
+    "id": "9",
+    "name": "Wireless Mouse",
+    "price": 59.99,
+    "image": "https://images.unsplash.com/photo-1527814050087-3793815479db?w=800&h=800&fit=crop",
+    "description": "Precision wireless mouse with ergonomic design. Features silent clicks, adjustable DPI, and long battery life.",
+    "category": "Office"
+  },
+  {
+    "id": "10",
+    "name": "Mechanical Keyboard",
+    "price": 179.99,
+    "image": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=800&h=800&fit=crop",
+    "description": "Premium mechanical keyboard with RGB backlighting and tactile switches. Built for gaming and productivity.",
+    "category": "Office"
+  },
+  {
+    "id": "11",
+    "name": "USB-C Hub",
+    "price": 69.99,
+    "image": "https://images.unsplash.com/photo-1625948515291-69613efd103f?w=800&h=800&fit=crop",
+    "description": "7-in-1 USB-C hub with HDMI, USB 3.0, SD card reader, and power delivery. Essential for modern laptops.",
+    "category": "Office"
+  },
+  {
+    "id": "12",
+    "name": "Desk Organizer",
+    "price": 49.99,
+    "image": "https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=800&h=800&fit=crop",
+    "description": "Bamboo desk organizer keeps your workspace tidy. Multiple compartments for pens, notes, and accessories.",
+    "category": "Office"
+  }
+]

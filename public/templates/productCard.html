@@ -1,0 +1,20 @@
+<!-- Product Card Template -->
+<!-- This template is used as a reference. The actual implementation is in JavaScript for dynamic rendering -->
+
+<article class="product-card">
+  <div class="product-card__image-container">
+    <img 
+      src="{{product.image}}" 
+      alt="{{product.name}}"
+      class="product-card__image"
+      loading="lazy"
+    />
+  </div>
+  <div class="product-card__content">
+    <h3 class="product-card__name">{{product.name}}</h3>
+    <p class="product-card__price">{{product.price}}</p>
+    <button class="btn btn--primary product-card__add-btn">
+      Add to Cart
+    </button>
+  </div>
+</article>
