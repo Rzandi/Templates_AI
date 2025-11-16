@@ -2,9 +2,10 @@
 
 <html>
  <h1> Langsung aja </h1>
- <a href=https://templates-ai-gamma.vercel.app/</a><br> <p>untuk test frontednya</p> <p> Check this out! </p><br>
+ <a href=https://templates-ai-gamma.vercel.app/> <p> Check this out! </p><br>
   
- <br> <p> untuk test frontend dan backendnya <p> <a href=https://templatesai-production.up.railway.app/</a> <p>kamu juga bisa check disini</p>
+ <a href=https://templatesai-production.up.railway.app/> <p> kamu juga bisa check disini! </p>
+ 
 </html>
 
 # Premium E-Commerce - Vanilla JavaScript SPA
