@@ -2,9 +2,9 @@
 
 <html>
  <h1> Langsung aja </h1>
- <a href=https://templates-ai-gamma.vercel.app/> <p> Check this out! </p><br>
+ <a href=https://templates-ai-gamma.vercel.app/> Check this out!
   
- <a href=https://templatesai-production.up.railway.app/> <p> kamu juga bisa check disini! </p>
+ <a href=https://templatesai-production.up.railway.app/>  kamu juga bisa check disini! 
  
 </html>
 
