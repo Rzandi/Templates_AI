@@ -1,6 +1,7 @@
-chech this out
+
 
 <html>
+ <h1> Langsung aja </h1>
  <a href=https://templates-ai-gamma.vercel.app/< <p> Check this out! </p>
 </html>
 
