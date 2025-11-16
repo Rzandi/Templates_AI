@@ -1,3 +1,9 @@
+chech this out
+
+<html>
+ <a href=https://templates-ai-gamma.vercel.app/< <p> Check this out! </p>
+</html>
+
 # Premium E-Commerce - Vanilla JavaScript SPA
 
 A production-ready single-page application built with vanilla HTML, CSS, and JavaScript (ES2022 modules). No frameworks, no build tools - just clean, modular code.
